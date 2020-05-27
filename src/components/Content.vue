@@ -1,17 +1,17 @@
 <template>
     <div>
         <p>
-            1
+            <TextHelper :content="content"></TextHelper>
         </p>
     </div>
 </template>
 
 <script>
-  // import TextHelper from '@/helperComponents/TextHelper'
+  import TextHelper from '@/helperComponents/TextHelper'
 
   export default {
     name: 'Content',
-    // components: { TextHelper },
+    components: { TextHelper },
     data () {
       return {
         content: 'Book design is the art of incorporating the content, style, format, design, and sequence of the various\n' +
